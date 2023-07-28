@@ -1,0 +1,82 @@
+<app-navebar> </app-navebar>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center mt20">
+                <h1><b>Welcome to ExamPortal</b></h1>
+
+                <p class="mt20 mb20"> <b>
+                    Here you will get quizzes with different categories. We are continously working on to provide more specific topics for you. You can select any category as per your requirement.Thanks for visiting us!!
+                </b>
+                </p>
+                    
+                    
+                </div>
+            </div>
+            <mat-divider></mat-divider>
+
+            <div class="container-fluid mt20" >
+                <div class="row mb20" >
+                    <div class="col-md-6">
+
+                        <mat-card class="example-card" style="max-width: 600px; max-height: 500px;">
+                            <mat-card-header>
+                              <div mat-card-avatar class="example-header-image"></div>
+                              <mat-card-title>Quizzes for Students:</mat-card-title>
+                              <mat-card-subtitle>Learn and Test yourself</mat-card-subtitle>
+                            </mat-card-header>
+                            <img style="max-width: 800px; max-height: 500px;" mat-card-image src="/assets/Tech-Quiz-Test.jpg" alt="Learn and Test">
+                            <mat-card-content>
+                              <p>
+                                We are providing quizzes for many categories. As Engineering, Programming Languages, Aplitude, Mathematics, 
+                                History, etc. We will continue to add more interesting quizzes to help you test your knowldge. 
+                              </p>
+                            </mat-card-content>
+                            <mat-card-actions>
+                              <button mat-button>LIKE</button>
+                              <button mat-button>SHARE</button>
+                            </mat-card-actions>
+                          </mat-card>
+                          
+
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <mat-card class="example-card" style="max-width: 600px; max-height: 500px;">
+                            <mat-card-header>
+                              <div mat-card-avatar class="example-header-image"></div>
+                              <mat-card-title>Login to take the test: </mat-card-title>
+                              <mat-card-subtitle>For practice only</mat-card-subtitle>
+                            </mat-card-header>
+                            <img style="max-width: 800px; max-height: 290px;" mat-card-image src="/assets/login.png" alt="test">
+                            <mat-card-content>
+                              <p>
+                                You are welcome to the ExamPortal.You can login with us to take the test. If you are a new your please click on register to create an account. 
+                              </p>
+                            </mat-card-content>
+                            <mat-card-actions>
+                              <button mat-raised-button  class="mr20" color="primary" *ngIf="!isLoggedIn"
+                              routerLink="/login"  mat-button>Login</button>
+                              <button mat-raised-button color="primary" *ngIf="!isLoggedIn"
+                              routerLink="/signup" mat-button>Register</button>
+                            </mat-card-actions>
+                          </mat-card>
+                          
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+<mat-divider></mat-divider>
+<br>
+<br>
+
+
+    <app-footer></app-footer>
+    
